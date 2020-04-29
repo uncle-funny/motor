@@ -1,0 +1,209 @@
+.header
+  position: relative
+  background-color: $color-bg-header
+  &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 20.7rem
+      left: 0
+      width: 100%
+      height: 0.2rem
+      background-color: $color-bg-quality
+  &-site
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+    padding: 4rem 0 3rem  
+    &-logo       
+      &_name
+        font-size: 2rem
+        font-weight: 700
+        letter-spacing: 0.336rem
+        line-height: 2.9rem
+        margin-top: 2rem
+        span
+          font-size: 3.3rem
+          font-weight: 300
+          text-transform: uppercase
+    &-nav
+      text-align: center
+      &-offer
+        margin-top: 1.5rem
+        margin-bottom: 5rem
+        font-size: 1.2rem
+        font-weight: 700
+        line-height: 2.7rem
+        text-transform: uppercase
+      &-menu
+        .main-menu
+          display: flex
+          li
+            margin-right: 6.5rem
+            position: relative  
+            &:last-child
+              margin-right:  0  
+            &:hover .submenu
+              opacity: 1
+              transform: scaleY(1)                     
+            a          
+              font-size: 1.5rem
+              font-weight: 700
+              line-height: 3.1rem
+              color: $color-text-light
+              text-transform: uppercase
+              text-decoration: none                        
+          .submenu-link i
+            padding-left: 1rem
+            transition: all .3s ease
+            transform-origin: center   
+          .wrap-submenu
+            padding-top: 6.5rem                          
+          .submenu
+            min-width: 30rem
+            position: absolute
+            padding: 6rem 3rem
+            text-align: left
+            background-color: $color-text-dark
+            top: 3rem
+            border-top: 2rem solid $color-bg-header
+            left: 0
+            z-index: 1111
+            transform: scaleY(0)
+            transform-origin: top
+            opacity: 0
+            transition: all .2s ease-in-out
+            li
+              padding-bottom: 2rem
+              margin-right: 0
+              a
+                font-size: 1.5rem  
+                display: flex
+                align-items: center
+                justify-content: space-between 
+           
+    &-user
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      text-align: center   
+      min-height: 100%
+      i
+        font-size: 2.5rem
+      &-social
+      &-social i        
+        transition: all .4s ease
+        &:hover
+          color: darken(#fff, 55%)
+          cursor: pointer
+      &-social > i:not(:last-child)
+        margin-right: 3rem    
+      &-login
+        display: flex
+        position: relative
+        .submenu-login
+          position: absolute
+          min-width: 25rem
+          padding: 4rem 2rem 1rem
+          text-align: left
+          background-color: $color-text-dark
+          top: 3rem
+          border-top: 2rem solid $color-bg-header
+          left: -10rem
+          transform: scaleY(0)
+          transform-origin: top
+          opacity: 0
+          z-index: 1
+          transition: all .2s ease-in-out
+          li
+            padding-bottom: 2rem
+            margin-right: 0          
+            a
+              font-size: 1.5rem
+              font-weight: 700
+              line-height: 3.1rem
+              color: $color-text-light
+              text-transform: uppercase
+              text-decoration: none   
+        button          
+          font-family: $fonts-open-sans
+          font-size: 1.2rem
+          font-weight: 400
+          text-transform: uppercase 
+          background-color: transparent
+          border: none
+          color: $color-text-light
+          &:focus
+            outline: none
+        .sing-in
+          margin-right: 4rem
+          position: relative
+          &:hover + .submenu-login
+            opacity: 1
+            transform: scaleY(1)
+          &::after
+            content: ""
+            display: block
+            position: absolute
+            right: -2rem
+            top: 0
+            height: 3rem
+            width: .1rem
+            background-color: #fff
+          &:hover
+            cursor: pointer
+          i
+            margin-right: 1rem
+        .my-cart
+          position: relative
+          &:hover
+            cursor: pointer
+          &::after
+            content: "10"
+            position: absolute
+            display: block
+            right: -2rem
+            top: -3rem
+            width: 3rem
+            height: 3rem
+            border-radius: 100%
+            background-color: $color-like
+            line-height: 3rem
+            font-size: 1.3rem
+          i
+            margin-left: 1rem
+  &-main
+    padding: 5rem 0
+    position: relative
+    &-sale
+      position: absolute
+      bottom: 10rem
+      left: 2rem
+      padding: 6rem 1rem 2rem 4rem
+      border: 0.3rem solid #ffffff
+      background-color: transparent
+      text-transform: uppercase
+      z-index: 9999
+      h2
+        font-size: 5rem
+        font-weight: 500
+        margin-bottom: 1rem
+        line-height: 4rem
+      p
+        font-size: 1.5rem
+        font-weight: 400  
+        line-height: 2.4rem
+  &-footer
+    background-color: $color-bg-quality
+    padding: 3rem 0
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: space-around
+      .quality-block
+        display: flex
+        align-items: center
+        h4
+          margin-left: 2rem
+          text-transform: uppercase
+

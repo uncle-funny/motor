@@ -1,0 +1,489 @@
+.header {
+  position: relative;
+  background-color: #111;
+}
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20.7rem;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #74000a;
+}
+.header-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 0 3rem;
+}
+.header-site-logo_name {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.336rem;
+  line-height: 2.9rem;
+  margin-top: 2rem;
+}
+.header-site-logo_name span {
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.header-site-nav {
+  text-align: center;
+}
+.header-site-nav-offer {
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  text-transform: uppercase;
+}
+.header-site-nav-menu .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-site-nav-menu .main-menu li {
+  margin-right: 6.5rem;
+  position: relative;
+}
+.header-site-nav-menu .main-menu li:last-child {
+  margin-right: 0;
+}
+.header-site-nav-menu .main-menu li:hover .submenu {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+.header-site-nav-menu .main-menu li a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header-site-nav-menu .main-menu .submenu-link i {
+  padding-left: 1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+.header-site-nav-menu .main-menu .wrap-submenu {
+  padding-top: 6.5rem;
+}
+.header-site-nav-menu .main-menu .submenu {
+  min-width: 30rem;
+  position: absolute;
+  padding: 6rem 3rem;
+  text-align: left;
+  background-color: #0b0b0b;
+  top: 3rem;
+  border-top: 2rem solid #111;
+  left: 0;
+  z-index: 1111;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header-site-nav-menu .main-menu .submenu li {
+  padding-bottom: 2rem;
+  margin-right: 0;
+}
+.header-site-nav-menu .main-menu .submenu li a {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-site-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  min-height: 100%;
+}
+.header-site-user i {
+  font-size: 2.5rem;
+}
+.header-site-user-social i {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.header-site-user-social i:hover {
+  color: #737373;
+  cursor: pointer;
+}
+.header-site-user-social > i:not(:last-child) {
+  margin-right: 3rem;
+}
+.header-site-user-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.header-site-user-login .submenu-login {
+  position: absolute;
+  min-width: 25rem;
+  padding: 4rem 2rem 1rem;
+  text-align: left;
+  background-color: #0b0b0b;
+  top: 3rem;
+  border-top: 2rem solid #111;
+  left: -10rem;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header-site-user-login .submenu-login li {
+  padding-bottom: 2rem;
+  margin-right: 0;
+}
+.header-site-user-login .submenu-login li a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header-site-user-login button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.header-site-user-login button:focus {
+  outline: none;
+}
+.header-site-user-login .sing-in {
+  margin-right: 4rem;
+  position: relative;
+}
+.header-site-user-login .sing-in:hover + .submenu-login {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+.header-site-user-login .sing-in::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  top: 0;
+  height: 3rem;
+  width: 0.1rem;
+  background-color: #fff;
+}
+.header-site-user-login .sing-in:hover {
+  cursor: pointer;
+}
+.header-site-user-login .sing-in i {
+  margin-right: 1rem;
+}
+.header-site-user-login .my-cart {
+  position: relative;
+}
+.header-site-user-login .my-cart:hover {
+  cursor: pointer;
+}
+.header-site-user-login .my-cart::after {
+  content: "10";
+  position: absolute;
+  display: block;
+  right: -2rem;
+  top: -3rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #ad1219;
+  line-height: 3rem;
+  font-size: 1.3rem;
+}
+.header-site-user-login .my-cart i {
+  margin-left: 1rem;
+}
+.header-main {
+  padding: 5rem 0;
+  position: relative;
+}
+.header-main-sale {
+  position: absolute;
+  bottom: 10rem;
+  left: 2rem;
+  padding: 6rem 1rem 2rem 4rem;
+  border: 0.3rem solid #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+  z-index: 9999;
+}
+.header-main-sale h2 {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 4rem;
+}
+.header-main-sale p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.header-footer {
+  background-color: #74000a;
+  padding: 3rem 0;
+}
+.header-footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.header-footer-wrap .quality-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-footer-wrap .quality-block h4 {
+  margin-left: 2rem;
+  text-transform: uppercase;
+}
+
+.products {
+  padding: 10rem 0;
+}
+.products .swiper-container {
+  padding: 5.2rem 0;
+  margin-bottom: 5rem;
+}
+.products .products-card {
+  max-width: 40rem;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.products .products-card:focus {
+  outline: none;
+}
+.products .products-card:hover {
+  -webkit-box-shadow: 0 0.4rem 2.7rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.4rem 2.7rem rgba(0, 0, 0, 0.2);
+}
+.products .products-card .title {
+  margin-top: 3rem;
+  color: #616161;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.products .products-card .price {
+  margin-top: 1rem;
+  color: #0b0b0b;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.products .products-card .footer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+  padding: 0 2rem 3rem;
+}
+.products .products-card .footer-card .button {
+  background-color: #ad1219;
+  border: none;
+  height: 6.8rem;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 3rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.products .products-card .footer-card .button:hover {
+  cursor: pointer;
+  background-color: #961016;
+}
+.products .products-card .footer-card .like {
+  width: 6.8rem;
+  height: 6.8rem;
+  border: 0.1rem solid #adacac;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.products .products-card .footer-card .like:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+.products .products-card .footer-card .like i {
+  color: #ad1219;
+  line-height: 6.8rem;
+  font-size: 1.5rem;
+}
+
+.seo {
+  background-color: #111;
+}
+.seo .section-title h2 {
+  padding-top: 3rem;
+  color: #fff;
+}
+.seo-text {
+  padding: 3rem 0;
+  line-height: 3.1rem;
+}
+.seo-text h4 {
+  font-weight: 700;
+}
+.seo-text .lorem {
+  margin-bottom: 3rem;
+}
+
+.footer {
+  background-color: #74000a;
+  padding: 7rem 0;
+}
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.footer-wrap .header-site-logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.footer-wrap .header-site-logo img {
+  width: 15rem;
+}
+.footer-wrap .header-site-logo_name {
+  font-size: 1.5rem;
+}
+.footer-wrap .header-site-logo span {
+  font-size: 2.3rem;
+}
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 0 5%;
+}
+.footer-nav ul {
+  padding: 0;
+}
+.footer-nav ul a {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+.footer-nav a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer-info {
+  text-align: right;
+}
+.footer-info .header-site-user-social {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  margin-bottom: 3rem;
+}
+.footer-info .header-site-user-social > i {
+  font-size: 2.5rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a, li {
+  display: block;
+}
+
+.container {
+  margin: 0 2%;
+}
+
+.section-title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.84rem;
+  text-transform: uppercase;
+  color: #0b0b0b;
+}
+
+/*# sourceMappingURL=main.css.map */

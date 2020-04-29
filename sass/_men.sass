@@ -1,0 +1,55 @@
+.products
+  padding: 10rem 0
+  .swiper-container
+    padding: 5.2rem 0 
+    margin-bottom: 5rem
+  .products-card
+    max-width: 40rem
+    text-align: center 
+    text-transform: uppercase     
+    transition: all .3s ease
+    &:focus
+      outline: none
+    &:hover
+      box-shadow: 0 0.4rem 2.7rem rgba(0, 0, 0, 0.2)
+    .title
+      margin-top: 3rem
+      color: $color-card-title
+      font-size: 1.5rem
+      font-weight: 700
+    .price
+      margin-top: 1rem
+      color: $color-text-dark
+      font-size: 1.9rem
+      font-weight: 700
+    .footer-card
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-top: 4rem
+      padding: 0 2rem 3rem
+      .button
+        background-color: $color-button
+        border: none
+        height: 6.8rem
+        color: $color-text-light
+        font-weight: 500
+        text-transform: uppercase
+        padding: 0 3rem
+        transition: all .3s ease
+        &:hover
+          cursor: pointer
+          background-color: darken($color-button, 5%)
+      .like
+        width: 6.8rem
+        height: 6.8rem
+        border: 0.1rem solid #adacac
+        transition: all .3s ease
+        &:hover
+          cursor: pointer
+          background-color: darken(#fff, 10%)
+
+        i
+          color: $color-button
+          line-height: 6.8rem
+          font-size: 1.5rem
